@@ -10,18 +10,18 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/docsify-katex@1.0.3/dist/docsify-katex.min.js"></script>
 
-    <!-- Docsify (맨 아래에 defer로 반드시 지연 실행!) -->
+    <!-- Docsify (지연 로딩 필수) -->
     <script defer src="https://unpkg.com/docsify/lib/docsify.min.js"></script>
 
     <style>
       body {
         margin: 0;
-        font-family: sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
       }
     </style>
   </head>
   <body>
-    <!-- 반드시 있어야 함 -->
+    <!-- Docsify가 마운트되는 곳 -->
     <div id="app">Loading...</div>
 
     <script>
@@ -30,7 +30,7 @@
         loadSidebar: true,
         subMaxLevel: 2,
         alias: {
-          '/.*/_sidebar.md': '/_sidebar.md',
+          '/.*/_sidebar.md': '/_sidebar.md', // 사이드바 경로 문제 해결
         }
       };
     </script>
