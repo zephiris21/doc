@@ -1,3 +1,3 @@
-- [홈](/)
-- [수식 예제](README.md)
-- [추가 문서](sample.md)
+- [홈](README.md)
+- [RNN 행렬 이해](RNN 행렬 이해.md)
+- [샘플 문서](sample.md)
